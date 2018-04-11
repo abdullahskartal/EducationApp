@@ -97,7 +97,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/imageView2"
             android:layout_marginEnd="14dp"
-            android:text="Henüz hesabınız zaten var mı?"
+            android:text="Hesabınız zaten var mı?"
             android:textColor="#000"
             android:textSize="15dp" />
 
@@ -108,7 +108,7 @@
             android:layout_alignEnd="@+id/editText6"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="19dp"
-            android:text="Kayıt ol"
+            android:text="Giriş yap"
 
             android:textColor="@android:color/holo_red_dark"
             android:textSize="18dp"
