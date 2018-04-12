@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Konu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="69dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="C#"
+            android:textColor="#ffffff"
+
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="144dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="CSS"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="215dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Html"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:text="Hangi programlama diliyle alıştırma yapmak istersin?"
+            android:textColor="#A4A4A4"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="175dp"
+            android:drawableLeft="@mipmap/ic_launcher_c"
+
+            android:background="@android:color/holo_red_dark"
+            android:text="C"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

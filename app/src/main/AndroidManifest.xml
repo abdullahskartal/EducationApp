@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mobileprogramming.egitim">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".login" />
-        <activity android:name=".register"></activity>
+        <activity android:name=".register" />
+        <activity android:name=".Konu"></activity>
     </application>
 
 </manifest>

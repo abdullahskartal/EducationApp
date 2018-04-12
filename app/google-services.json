@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "241269631737",
+    "firebase_url": "https://egitimapp-65cda.firebaseio.com",
+    "project_id": "egitimapp-65cda",
+    "storage_bucket": "egitimapp-65cda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241269631737:android:76012bfb1a77a690",
+        "android_client_info": {
+          "package_name": "mobileprogramming.egitim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241269631737-b477asa1scd9fb84j1i9ag2bl77f74gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_vfaoddFffzzaR5LEh4UXcD5wH1RnSAI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
