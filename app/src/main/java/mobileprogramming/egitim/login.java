@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class login extends AppCompatActivity implements View.OnClickListener {
 
     String login_sifre;
-    EditText kullanıcıadi,sifregiris;
+    EditText mail,sifregiris;
     TextView KayıtOl,giris;
     private FirebaseAuth auth;
     @Override
@@ -37,7 +37,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_login);
 
 
-        kullanıcıadi=(EditText)findViewById(R.id.login_email);
+        mail=(EditText)findViewById(R.id.login_email);
         sifregiris=(EditText)findViewById(R.id.login_sifre);
         giris=(TextView)findViewById(R.id.giris);
 
@@ -63,7 +63,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         giris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email=kullanıcıadi.getText().toString();
+                String email=mail.getText().toString();
                 final String sifre= sifregiris.getText().toString();
 
                 if (TextUtils.isEmpty(email)){
