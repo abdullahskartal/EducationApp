@@ -22,14 +22,14 @@ public class register extends AppCompatActivity implements View.OnClickListener 
     private EditText register_email,register_sifre;
     private FirebaseAuth auth;
     TextView girissayfası,hesapolustur;
-    EditText kullanıcıadı,email,sifre;
+    EditText email,sifre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
         auth=FirebaseAuth.getInstance();
-        kullanıcıadı=(EditText)findViewById(R.id.kullanıcı_adi);
+
         email=(EditText)findViewById(R.id.register_email);
         sifre=(EditText)findViewById(R.id.register_sifre);
         hesapolustur=(TextView)findViewById(R.id.hesap_olustur);
@@ -42,6 +42,9 @@ public class register extends AppCompatActivity implements View.OnClickListener 
             public void onClick(View v) {
                 String email=register_email.getText().toString().trim();
                 String sifre=register_sifre.getText().toString().trim();
+
+
+
 
                 if (TextUtils.isEmpty(email)){
                     Toast.makeText(getApplicationContext(),"Email adresinizi giriniz!",Toast.LENGTH_SHORT).show();

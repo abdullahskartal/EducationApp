@@ -30,7 +30,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         auth=FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser()!=null){
-            startActivity(new Intent(login.this,register.class));
+            startActivity(new Intent(login.this,Konu.class));
             finish();
         }
 
@@ -84,7 +84,9 @@ public class login extends AppCompatActivity implements View.OnClickListener {
                                     Toast.makeText(getApplicationContext(),"Birşeyler ters gitti!",Toast.LENGTH_SHORT).show();
 
                                 }else{
-                                    Intent intent=new Intent(login.this,)
+                                    Intent intent=new Intent(login.this,Konu.class);
+                                    startActivity(intent);
+                                    finish();
 
                                 }
                             }

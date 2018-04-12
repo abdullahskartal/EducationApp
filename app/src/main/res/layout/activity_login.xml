@@ -9,7 +9,6 @@
         android:layout_width="576dp"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="0dp">
 
@@ -22,7 +21,7 @@
             android:layout_marginTop="98dp"
             android:drawableLeft="@drawable/ic_action_user"
             android:ems="10"
-            android:hint="Email/Kullanıcı Adı"
+            android:hint="Email adresi"
             android:inputType="textPersonName"
             android:textSize="25dp" />
 

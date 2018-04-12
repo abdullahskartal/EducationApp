@@ -13,25 +13,12 @@
         tools:layout_editor_absoluteY="0dp">
 
         <EditText
-            android:id="@+id/kullanıcı_adi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
-            android:drawableLeft="@drawable/ic_action_person"
-            android:ems="10"
-            android:hint="Kullanıcı adi"
-            android:inputType="textPersonName"
-            android:textSize="25dp" />
-
-        <EditText
             android:id="@+id/register_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="123dp"
+            android:layout_marginTop="83dp"
             android:drawableLeft="@drawable/ic_action_user"
             android:ems="10"
             android:hint="Email"
@@ -57,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="189dp"
+            android:layout_marginTop="168dp"
             android:drawableLeft="@drawable/ic_action_pass"
             android:ems="10"
             android:hint="Şifre"

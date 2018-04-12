@@ -22,6 +22,7 @@
             android:layout_marginBottom="69dp"
             android:background="@android:color/holo_red_dark"
             android:text="C#"
+            android:drawableLeft="@mipmap/ic_launcher_csharp"
             android:textColor="#ffffff"
 
             />
@@ -36,6 +37,7 @@
             android:layout_marginBottom="144dp"
             android:background="@android:color/holo_red_dark"
             android:text="CSS"
+            android:drawableLeft="@mipmap/ic_launcher_css"
             android:textColor="#ffffff" />
 
         <Button
@@ -48,6 +50,7 @@
             android:layout_marginBottom="215dp"
             android:background="@android:color/holo_red_dark"
             android:text="Html"
+            android:drawableLeft="@mipmap/ic_launcher_html"
             android:textColor="#ffffff" />
 
         <TextView
@@ -59,7 +62,9 @@
             android:layout_marginTop="43dp"
             android:text="Hangi programlama diliyle alıştırma yapmak istersin?"
             android:textColor="#A4A4A4"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+
+            />
 
         <Button
             android:id="@+id/button"
