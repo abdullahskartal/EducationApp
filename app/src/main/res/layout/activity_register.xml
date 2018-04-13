@@ -71,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:drawableLeft="@drawable/ic_action_ekle"
+                    android:onClick="registerButton"
                     android:text="Hesap oluştur"
                     android:textColor="#fff"
                     android:textSize="20sp"
@@ -97,6 +98,7 @@
             android:layout_marginBottom="18dp"
             android:layout_toEndOf="@+id/baslik2"
 
+            android:onClick="startLoginActivity"
             android:text="Giriş yap"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="18dp"
