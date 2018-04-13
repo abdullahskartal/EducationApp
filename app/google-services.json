@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "241269631737-bf6da8u6pdpomj9fhjg10td6fmslfhad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobileprogramming.egitim",
+            "certificate_hash": "5c943a262169925a394ba7cad430c1d69bbd7fbd"
+          }
+        },
+        {
           "client_id": "241269631737-b477asa1scd9fb84j1i9ag2bl77f74gf.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241269631737-b477asa1scd9fb84j1i9ag2bl77f74gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

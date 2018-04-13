@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -26,7 +27,9 @@ public class Konu extends AppCompatActivity {
 
 
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
+        if (user !=null){
+            Toast.makeText(getApplicationContext(),user.getEmail(),Toast.LENGTH_SHORT).show();
+        }
 
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override

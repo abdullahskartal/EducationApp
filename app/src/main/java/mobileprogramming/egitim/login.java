@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,8 +30,9 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_login);
 
         auth=FirebaseAuth.getInstance();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user !=null){
 
-        if (auth.getCurrentUser()!=null){
             startActivity(new Intent(login.this,Konu.class));
             finish();
         }
