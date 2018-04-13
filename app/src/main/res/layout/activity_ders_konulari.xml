@@ -16,13 +16,13 @@
             android:id="@+id/konular"
             android:layout_width="274dp"
             android:layout_height="61dp"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp"
-            android:text="@ KONULAR"
-            android:textColor="#ffffff"
+            android:layout_marginEnd="38dp"
+            android:layout_marginTop="40dp"
             android:background="@android:color/holo_red_dark"
-            />
+            android:text="@ KONULAR"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/button6"
@@ -59,5 +59,16 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="95dp"
             android:text="4" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="52dp"
+            android:layout_height="31dp"
+            android:layout_alignBaseline="@+id/konular"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp"
+            android:text="Button"
+
+            />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
