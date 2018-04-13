@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".login" />
         <activity android:name=".register" />
-        <activity android:name=".Konu"></activity>
+        <activity android:name=".Konu" />
+        <activity android:name=".DersKonulari"></activity>
     </application>
 
 </manifest>

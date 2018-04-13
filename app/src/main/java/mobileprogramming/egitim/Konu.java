@@ -13,41 +13,81 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Konu extends AppCompatActivity {
 
-
+    private Button signOut;
     private FirebaseAuth auth;
-    Button signOut;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_konu);
+
         auth = FirebaseAuth.getInstance();
 
-         signOut = (Button) findViewById(R.id.sign_out);
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user !=null){
+            Toast.makeText(getApplicationContext(),user.getEmail(),Toast.LENGTH_SHORT).show();
+        }
+        authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
 
-
-        //   final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        //   if (user !=null){
-        //       Toast.makeText(getApplicationContext(),user.getEmail(),Toast.LENGTH_SHORT).show();
-        //   }
-
+                    startActivity(new Intent(Konu.this, login.class));
+                    finish();
+                }
+            }
+        };
+        signOut = (Button) findViewById(R.id.sign_out);
 
         signOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                auth.signOut();
+                signOut();
             }
         });
 
+    }
+    public
+    FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
+        @Override
+        public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+            FirebaseUser user = firebaseAuth.getCurrentUser();
+            if (user == null) {
 
+                startActivity(new Intent(Konu.this, login.class));
+                finish();
+            }
+        }
+
+    };
+
+    public void signOut() {
+        auth.signOut();
+        FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    startActivity(new Intent(Konu.this, login.class));
+                    finish();
+                }
+            }
+        };
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        auth.addAuthStateListener(authListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (authListener != null) {
+            auth.removeAuthStateListener(authListener);
+        }
+    }
 }
-
-
-
-
-
-
-
-

@@ -46,6 +46,9 @@ public class register extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(register.this, "Authentication completed.",
                                     Toast.LENGTH_SHORT).show();
+                            Intent myintent=new Intent(register.this,login.class);
+                            startActivity(myintent);
+                            FirebaseUser user=auth.getCurrentUser();
                         } else {
                             Toast.makeText(register.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
@@ -58,5 +61,7 @@ public class register extends AppCompatActivity {
         Intent startActivity = new Intent(register.this, login.class);
         startActivity(startActivity);
     }
+
+
 
 }
