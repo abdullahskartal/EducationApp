@@ -19,10 +19,10 @@
             android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="69dp"
+            android:layout_marginBottom="99dp"
             android:background="@android:color/holo_red_dark"
-            android:text="C#"
             android:drawableLeft="@mipmap/ic_launcher_csharp"
+            android:text="C#"
             android:textColor="#ffffff"
 
             />
@@ -34,10 +34,10 @@
 
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="144dp"
+            android:layout_marginBottom="164dp"
             android:background="@android:color/holo_red_dark"
-            android:text="CSS"
             android:drawableLeft="@mipmap/ic_launcher_css"
+            android:text="CSS"
             android:textColor="#ffffff" />
 
         <Button
@@ -45,12 +45,10 @@
             android:layout_width="297dp"
             android:layout_height="wrap_content"
 
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="215dp"
+            android:layout_centerInParent="true"
             android:background="@android:color/holo_red_dark"
-            android:text="Html"
             android:drawableLeft="@mipmap/ic_launcher_html"
+            android:text="Html"
             android:textColor="#ffffff" />
 
         <TextView
@@ -59,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="87dp"
+            android:layout_marginTop="70dp"
             android:text="Hangi programlama diliyle alıştırma yapmak istersin?"
             android:textColor="#A4A4A4"
             android:textSize="25dp"
@@ -71,11 +69,11 @@
             android:layout_width="297dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="175dp"
-            android:drawableLeft="@mipmap/ic_launcher_c"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="162dp"
 
             android:background="@android:color/holo_red_dark"
+            android:drawableLeft="@mipmap/ic_launcher_c"
             android:text="C"
             android:textColor="#ffffff" />
 
@@ -90,6 +88,57 @@
             android:background="@color/colorPrimary"
             android:onClick="btnSignOut"
             android:text="SIGN OUT" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button4"
+            android:layout_marginBottom="0dp"
+            android:drawableTop="@drawable/ic_action_person"
+            android:text="Profil" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginStart="110dp"
+            android:drawableTop="@mipmap/ic_launcher_persons"
+            android:text="Arkadaşlar" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_marginEnd="115dp"
+            android:drawableTop="@mipmap/ic_launcher_mail"
+            android:text="Mesajlar" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_alignTop="@+id/textView4"
+            android:drawableTop="@mipmap/ic_launcher_star"
+            android:text="Skorlar"
+
+            />
+
+        <TextView
+            android:id="@+id/kosulText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button4"
+            android:layout_marginTop="13dp"
+            android:text="TextView" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
