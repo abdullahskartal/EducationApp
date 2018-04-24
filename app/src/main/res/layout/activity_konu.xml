@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteY="51dp">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnCsharpDersi"
             android:layout_width="297dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -28,7 +28,7 @@
             />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnCssDersi"
             android:layout_width="297dp"
             android:layout_height="wrap_content"
 
@@ -41,7 +41,7 @@
             android:textColor="#ffffff" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnHtmlDersi"
             android:layout_width="297dp"
             android:layout_height="wrap_content"
 
@@ -65,7 +65,7 @@
             />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnCdersi"
             android:layout_width="297dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -94,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="73dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/button4"
+            android:layout_alignStart="@+id/btnCsharpDersi"
             android:layout_marginBottom="0dp"
             android:drawableTop="@drawable/ic_action_person"
             android:text="Profil" />
@@ -124,7 +124,7 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/button4"
+            android:layout_alignEnd="@+id/btnCsharpDersi"
             android:layout_alignTop="@+id/textView4"
             android:drawableTop="@mipmap/ic_launcher_star"
             android:text="Skorlar"
@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/button4"
+            android:layout_alignStart="@+id/btnCsharpDersi"
             android:layout_marginTop="13dp"
             android:text="TextView" />
 

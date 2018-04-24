@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
@@ -23,6 +25,8 @@ import org.w3c.dom.Text;
 public class register extends AppCompatActivity {
     private EditText register_email,register_sifre;
     private FirebaseAuth auth;
+    private DatabaseReference mDatabase;
+    private
     EditText email, sifre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,19 +41,30 @@ public class register extends AppCompatActivity {
     }
 
     public void registerButton (View view) {
-        String rEmail = this.email.getText().toString();
-        String rPassword = this.sifre.getText().toString();
+        final String rEmail = this.email.getText().toString();
+        final String rPassword = this.sifre.getText().toString();
         auth.createUserWithEmailAndPassword(rEmail, rPassword)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            DBusers yenikisi=new DBusers();
+
+                            yenikisi.setUsermail(rEmail);
+                            yenikisi.setUserpass(rPassword);
+
+                            // database de kullanici alanının referansı alınıyor. burada işlemin yapılacağı belirtiliyor.
+                            mDatabase = FirebaseDatabase.getInstance().getReference("Kullanici");
+
+                            // database/kullanici/ içinde kayıt olan kişinin id si çeklip yeni kisi oluşturuluyor.
+                            mDatabase.child(auth.getCurrentUser().getUid()).setValue(yenikisi);
+
+
                             Toast.makeText(register.this, "Authentication completed.",
                                     Toast.LENGTH_SHORT).show();
-                            Intent myintent=new Intent(register.this,login.class);
-                            startActivity(myintent);
-                            FirebaseUser user=auth.getCurrentUser();
-                        } else {
+
+                            Intent myIntent=new Intent(register.this,login.class);
+                            startActivity(myIntent);} else {
                             Toast.makeText(register.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                         }
