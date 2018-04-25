@@ -21,7 +21,9 @@
         <activity android:name=".login" />
         <activity android:name=".register" />
         <activity android:name=".Konu" />
-        <activity android:name=".DersKonulari"></activity>
+        <activity android:name=".DersKonulari" />
+        <activity android:name=".SinavSonuc" />
+        <activity android:name=".Profil"></activity>
     </application>
 
 </manifest>
