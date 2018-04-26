@@ -42,7 +42,7 @@
             android:textColor="#ffffff" />
 
         <Button
-            android:id="@+id/konular"
+            android:id="@+id/btnDersAdi"
             android:layout_width="274dp"
             android:layout_height="61dp"
             android:layout_alignParentEnd="true"
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/konular"
+            android:layout_alignTop="@+id/btnDersAdi"
             android:layout_marginStart="17dp"
             android:drawableStart="@mipmap/ic_launcher_bac"
             android:text="" />
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/konular"
+            android:layout_alignStart="@+id/btnDersAdi"
             android:layout_marginTop="189dp"
             android:text="123123123123" />
 
@@ -77,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/konular"
+            android:layout_alignStart="@+id/btnDersAdi"
             android:layout_marginBottom="211dp"
             android:text="123123" />
 
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/konular"
+            android:layout_alignStart="@+id/btnDersAdi"
             android:layout_marginBottom="120dp"
             android:text="1231231" />
         <TextView
@@ -94,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="73dp"
             android:layout_alignTop="@+id/textView4"
-            android:layout_toStartOf="@+id/konular"
+            android:layout_toStartOf="@+id/btnDersAdi"
             android:drawableTop="@drawable/ic_action_person"
             android:text="Profil" />
 
