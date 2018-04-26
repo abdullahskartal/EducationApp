@@ -8,53 +8,37 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-public class DersKonulari extends AppCompatActivity {
-
-
+public class CssKonular extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ders_konulari);
+        setContentView(R.layout.activity_css_konular);
 
-        Button btnDersAdi=(Button)findViewById(R.id.btnDersAdi);
+        final Button btnDersAdiKonu=(Button)findViewById(R.id.btnDersAdiKonu);
+
         final Button btnKonu1=(Button)findViewById(R.id.btnKonu1);
         final Button btnKonu2=(Button)findViewById(R.id.btnKonu2);
         final Button btnKonu3=(Button)findViewById(R.id.btnKonu3);
         final Button btnKonu4=(Button)findViewById(R.id.btnKonu4);
 
-//BUTONLARA KONU ADLARINI EKLEME
-        btnKonu2.setText("HTML ETİKETLER");
-        btnKonu1.setText("HTML GİRİŞ");
+        btnKonu1.setText("CSS SINIFLANDIRMA");
+        btnKonu2.setText("FONT ÖZELLİKLERİ");
 
         Bundle extras=getIntent().getExtras();
         final String secilenders=extras.getString("mesaj");
-
-
-
-
-
-
-
-
-
-
-
-
+        btnDersAdiKonu.setText(secilenders);
         btnKonu1.setOnClickListener(new View.OnClickListener(){
 
 
             @Override
             public void onClick(View v) {
-              String konuadi= (String) btnKonu1.getText();
+                String konuadi= (String) btnKonu1.getText();
 
-              Intent k=new Intent(DersKonulari.this,Soru.class);
-              k.putExtra("mesaj",secilenders);
-              k.putExtra("mesaj2",konuadi);
-              startActivity(k);
+                Intent k=new Intent(CssKonular.this,Soru.class);
+                k.putExtra("mesaj",secilenders);
+                k.putExtra("mesaj2",konuadi);
+                startActivity(k);
             }
         });
         btnKonu2.setOnClickListener(new View.OnClickListener(){
@@ -64,7 +48,7 @@ public class DersKonulari extends AppCompatActivity {
             public void onClick(View v) {
                 String konuadi= (String) btnKonu2.getText();
 
-                Intent k=new Intent(DersKonulari.this,Soru.class);
+                Intent k=new Intent(CssKonular.this,Soru.class);
                 k.putExtra("mesaj",secilenders);
                 k.putExtra("mesaj2",konuadi);
                 startActivity(k);
@@ -77,7 +61,7 @@ public class DersKonulari extends AppCompatActivity {
             public void onClick(View v) {
                 String konuadi= (String) btnKonu3.getText();
 
-                Intent k=new Intent(DersKonulari.this,Soru.class);
+                Intent k=new Intent(CssKonular.this,Soru.class);
                 k.putExtra("mesaj",secilenders);
                 k.putExtra("mesaj2",konuadi);
                 startActivity(k);
@@ -90,7 +74,7 @@ public class DersKonulari extends AppCompatActivity {
             public void onClick(View v) {
                 String konuadi= (String) btnKonu4.getText();
 
-                Intent k=new Intent(DersKonulari.this,Soru.class);
+                Intent k=new Intent(CssKonular.this,Soru.class);
                 k.putExtra("mesaj",secilenders);
                 k.putExtra("mesaj2",konuadi);
                 startActivity(k);
@@ -104,10 +88,10 @@ public class DersKonulari extends AppCompatActivity {
         btnGeri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent k=new Intent(DersKonulari.this,Konu.class);
+                Intent k=new Intent(CssKonular.this,Konu.class);
                 startActivity(k);
             }
         });
-        Toast.makeText(DersKonulari.this,secilenders,Toast.LENGTH_SHORT).show();
+        Toast.makeText(CssKonular.this,secilenders,Toast.LENGTH_SHORT).show();
     }
 }
