@@ -40,6 +40,7 @@
             android:layout_alignStart="@+id/txtSoru"
             android:layout_marginTop="173dp"
             android:text="Button"
+
             android:background="@android:color/holo_red_dark"
             android:textColor="#ffffff"
             />
@@ -131,6 +132,7 @@
             android:background="#073763"
             android:textColor="#ffffff"
             />
+
 
 
     </RelativeLayout>

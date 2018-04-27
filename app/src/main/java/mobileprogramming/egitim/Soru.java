@@ -28,8 +28,6 @@ public class Soru extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_soru);
 
-
-
         txtSoru=(EditText)findViewById(R.id.txtSoru);
         txtA=(Button)findViewById(R.id.txtA);
         txtB=(Button)findViewById(R.id.txtB);
