@@ -72,7 +72,7 @@ public class Konu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 auth.signOut();
-                Intent k = new Intent(Konu.this, login.class);
+                Intent k = new Intent(Konu.this, Login.class);
                 startActivity(k);
 
             }

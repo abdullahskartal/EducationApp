@@ -18,8 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login" />
-        <activity android:name=".register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
         <activity android:name=".Konu" />
         <activity android:name=".HtmlKonular" />
         <activity android:name=".SinavSonuc" />

@@ -70,7 +70,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/btnDersAdiKonu"
             android:layout_marginTop="189dp"
-            android:text="123123123123" />
+            android:text="123123123123"
+            android:textColor="#000000"
+            />
 
         <TextView
             android:id="@+id/textView9"
@@ -79,7 +81,9 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/btnDersAdiKonu"
             android:layout_marginBottom="211dp"
-            android:text="123123" />
+            android:text="123123"
+            android:textColor="#000000"
+            />
 
         <TextView
             android:id="@+id/textView10"
@@ -88,7 +92,9 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/btnDersAdiKonu"
             android:layout_marginBottom="120dp"
-            android:text="1231231" />
+            android:text="1231231"
+            android:textColor="#000000"
+            />
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"

@@ -41,6 +41,7 @@
             android:layout_marginTop="173dp"
             android:text="Button"
             android:background="@android:color/holo_red_dark"
+            android:textColor="#ffffff"
             />
 
         <Button
@@ -51,6 +52,7 @@
             android:layout_centerVertical="true"
             android:text="Button"
             android:background="@android:color/holo_red_dark"
+            android:textColor="#ffffff"
             />
 
         <Button
@@ -62,6 +64,7 @@
             android:layout_marginBottom="165dp"
             android:text="Button"
             android:background="@android:color/holo_red_dark"
+            android:textColor="#ffffff"
             />
 
         <TextView

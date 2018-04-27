@@ -37,7 +37,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/textView14"
             android:layout_marginTop="66dp"
-
+            android:textColor="#000000"
             android:text="TextView" />
 
         <TextView
@@ -68,7 +68,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/btnGeri"
             android:layout_marginTop="156dp"
-            android:text="Kullanıcı Adı, Soyadı" />
+            android:text="Kullanıcı Adı, Soyadı"
+            android:textColor="#000000"
+            />
 
         <TextView
             android:id="@+id/textView16"
@@ -77,7 +79,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/textView15"
             android:layout_marginEnd="79dp"
-            android:text="Kullanıcı skoru" />
+            android:text="Kullanıcı skoru"
+            android:textColor="#000000"
+            />
 
         <TextView
             android:id="@+id/textView17"
@@ -99,7 +103,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/textView17"
             android:layout_marginTop="232dp"
-            android:text="abdullahsaidkartal@gmail.com" />
+            android:text="abdullahsaidkartal@gmail.com"
+            android:textColor="#000000"
+            />
 
         <TextView
             android:id="@+id/textView19"
@@ -108,7 +114,9 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/textView17"
             android:layout_marginBottom="221dp"
-            android:text="twitter.com/abdullahskartal" />
+            android:text="twitter.com/abdullahskartal"
+            android:textColor="#000000"
+            />
 
         <TextView
             android:id="@+id/textView20"
@@ -117,7 +125,9 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/textView17"
             android:layout_marginBottom="174dp"
-            android:text="github.com/abdullahskartal" />
+            android:text="github.com/abdullahskartal"
+            android:textColor="#000000"
+            />
 
         <Button
             android:id="@+id/button2"

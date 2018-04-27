@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 try{
                     sleep(2000);
-                    Intent intent=new Intent(getApplicationContext(),login.class);
+                    Intent intent=new Intent(getApplicationContext(),Login.class);
                     startActivity(intent);
                     finish();
                 }
