@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Konu"
-    android:background="@drawable/konu"
+    android:background="@drawable/profile3"
     >
 
     <RelativeLayout
@@ -79,57 +79,15 @@
             android:text="SIGN OUT"
             android:textColor="#ffffff"
             />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="73dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/btnCsharpDersi"
-            android:layout_marginBottom="0dp"
-            android:drawableTop="@drawable/ic_action_person"
-            android:text="Profil" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="14dp"
-            android:layout_marginStart="110dp"
-            android:drawableTop="@mipmap/ic_launcher_persons"
-            android:text="Arkadaşlar" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/textView4"
-            android:layout_marginEnd="115dp"
-            android:drawableTop="@mipmap/ic_launcher_mail"
-            android:text="Mesajlar" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/btnCsharpDersi"
-            android:layout_alignTop="@+id/textView4"
-            android:drawableTop="@mipmap/ic_launcher_star"
-            android:text="Skorlar"
-
-            />
-        />
         <TextView
             android:id="@+id/kosulText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/sign_out"
             android:layout_alignStart="@+id/btnCsharpDersi"
-            android:layout_marginTop="13dp"
-            android:text="TextView" />
+            android:text="Geri"
+            android:textColor="#fff"
+            />
 
         <TextView
             android:id="@+id/textView"
