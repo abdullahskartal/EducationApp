@@ -1,7 +1,9 @@
 package mobileprogramming.egitim;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +32,14 @@ public class SinavSonuc extends AppCompatActivity {
         txtDogruSayisi.setText(DogruSayisi);
         txtCevapSayisi.setText(CevaplananSayisi);
 
+        TextView btnGeri=(TextView)findViewById(R.id.btnGeri);
+        btnGeri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k=new Intent(SinavSonuc.this,Konu.class);
+                startActivity(k);
+            }
+        });
 
     }
 }

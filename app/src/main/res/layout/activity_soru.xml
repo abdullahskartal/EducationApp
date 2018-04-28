@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Soru"
-    android:background="@drawable/soru"
-    >
+    android:background="@drawable/soru">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -25,6 +25,7 @@ public class HtmlKonular extends AppCompatActivity {
 //BUTONLARA KONU ADLARINI EKLEME
         btnKonu1.setText("HTML GİRİŞ");
         btnKonu2.setText("HTML ETİKETLER");
+        btnKonu3.setText("METİN BİÇİMLENDİRME");
 
         Bundle extras=getIntent().getExtras();
         final String secilenders=extras.getString("mesaj");

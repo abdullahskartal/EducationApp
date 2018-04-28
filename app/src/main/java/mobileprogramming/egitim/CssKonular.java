@@ -23,6 +23,7 @@ public class CssKonular extends AppCompatActivity {
 
         btnKonu1.setText("CSS SINIFLANDIRMA");
         btnKonu2.setText("FONT ÖZELLİKLERİ");
+        btnKonu3.setText("WEB ÖZELLİKLERİ");
 
         Bundle extras=getIntent().getExtras();
         final String secilenders=extras.getString("mesaj");
