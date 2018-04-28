@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -82,7 +83,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (!task.isSuccessful()){
 
-                                    Toast.makeText(getApplicationContext(),"Birşeyler ters gitti!",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(),"Email adresiniz veya şifreniz yanlış!",Toast.LENGTH_SHORT).show();
 
                                 }else{
                                     Intent intent=new Intent(Login.this,Konu.class);

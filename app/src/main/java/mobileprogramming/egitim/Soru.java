@@ -54,7 +54,7 @@ public class Soru extends AppCompatActivity {
         final String secilenKonu=extras.getString("mesaj2");
 
 
-        btnBaslik.setText(secilenDers+" + "+secilenKonu);
+        btnBaslik.setText(secilenDers+" , "+secilenKonu);
 
         soruGetir(secilenDers,secilenKonu,quesNum);
         txtDogruSayisi.setText("0");

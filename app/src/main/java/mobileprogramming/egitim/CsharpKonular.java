@@ -16,6 +16,5 @@ public class CsharpKonular extends AppCompatActivity {
         final Button btnKonu1=(Button)findViewById(R.id.btnKonu1);
         final Button btnKonu2=(Button)findViewById(R.id.btnKonu2);
         final Button btnKonu3=(Button)findViewById(R.id.btnKonu3);
-        final Button btnKonu4=(Button)findViewById(R.id.btnKonu4);
     }
 }

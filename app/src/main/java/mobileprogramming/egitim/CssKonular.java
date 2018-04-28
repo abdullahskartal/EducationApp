@@ -20,7 +20,6 @@ public class CssKonular extends AppCompatActivity {
         final Button btnKonu1=(Button)findViewById(R.id.btnKonu1);
         final Button btnKonu2=(Button)findViewById(R.id.btnKonu2);
         final Button btnKonu3=(Button)findViewById(R.id.btnKonu3);
-        final Button btnKonu4=(Button)findViewById(R.id.btnKonu4);
 
         btnKonu1.setText("CSS SINIFLANDIRMA");
         btnKonu2.setText("FONT ÖZELLİKLERİ");
@@ -67,22 +66,6 @@ public class CssKonular extends AppCompatActivity {
                 startActivity(k);
             }
         });
-        btnKonu4.setOnClickListener(new View.OnClickListener(){
-
-
-            @Override
-            public void onClick(View v) {
-                String konuadi= (String) btnKonu4.getText();
-
-                Intent k=new Intent(CssKonular.this,Soru.class);
-                k.putExtra("mesaj",secilenders);
-                k.putExtra("mesaj2",konuadi);
-                startActivity(k);
-            }
-        });
-
-
-
 
         TextView btnGeri=(TextView)findViewById(R.id.btnGeri);
         btnGeri.setOnClickListener(new View.OnClickListener() {

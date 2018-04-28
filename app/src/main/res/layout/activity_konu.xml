@@ -21,7 +21,7 @@
             android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="99dp"
+            android:layout_marginBottom="77dp"
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_csharp"
             android:text="C#"
@@ -36,7 +36,7 @@
 
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="164dp"
+            android:layout_marginBottom="163dp"
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_css"
             android:text="CSS"
@@ -47,7 +47,9 @@
             android:layout_width="297dp"
             android:layout_height="wrap_content"
 
-            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="244dp"
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_html"
             android:text="Html"
@@ -59,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="162dp"
+            android:layout_marginTop="198dp"
 
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_c"
