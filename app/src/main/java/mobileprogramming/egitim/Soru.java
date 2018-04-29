@@ -3,6 +3,7 @@ package mobileprogramming.egitim;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -44,15 +45,11 @@ public class Soru extends AppCompatActivity {
         txtA=(Button)findViewById(R.id.txtA);
         txtB=(Button)findViewById(R.id.txtB);
         txtC=(Button)findViewById(R.id.txtC);
-
-
-
         Button btnBaslik=(Button)findViewById(R.id.btnDersAdiKonu);
 
         Bundle extras=getIntent().getExtras();
         final String secilenDers=extras.getString("mesaj");
         final String secilenKonu=extras.getString("mesaj2");
-
 
         btnBaslik.setText(secilenDers+" , "+secilenKonu);
 
@@ -67,17 +64,23 @@ public class Soru extends AppCompatActivity {
                 if (quesNum<4)
                 {
                     soruGetir(secilenDers,secilenKonu,quesNum);
-
                 }
                 else{
                     btnSinaviBitir.performClick();
                 }
-
             }
         });
-
+/*
+        TextView btnGeri=(TextView)findViewById(R.id.btnGeri);
+        btnGeri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k=new Intent(Soru.this,secilenKonu.a);
+                startActivity(k);
+            }
+        });
+*/
         btnSinaviBitir.setOnClickListener(new View.OnClickListener(){
-
 
             @Override
             public void onClick(View v) {
@@ -119,11 +122,6 @@ public class Soru extends AppCompatActivity {
         });
 
     }
-
-
-
-
-
     public void soruGetir(String secilenDers,String secilenKonu,int quesNum) {
 
         String SoruNo=String.valueOf(quesNum);
@@ -192,9 +190,6 @@ public class Soru extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 
     public String cevapKontrol(String verilenCevap,String dogruCVP){

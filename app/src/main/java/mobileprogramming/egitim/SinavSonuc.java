@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class SinavSonuc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sinav_sonuc);
 
+        Button btnProfil=(Button)findViewById(R.id.btnProfil);
         txtCevapSayisi=(TextView)findViewById(R.id.txtSonucCevapSayisi);
         txtDogruSayisi=(TextView)findViewById(R.id.txtSonucDogruSayisi);
 
@@ -48,8 +50,17 @@ public class SinavSonuc extends AppCompatActivity {
             }
         });
 
+        btnProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k=new Intent(SinavSonuc.this,Profil.class);
+                startActivity(k);
+            }
+        });
 
-        /*
+        auth=FirebaseAuth.getInstance();
+
+
         DatabaseReference ref= FirebaseDatabase.getInstance().getReference();
         final DatabaseReference refPuan=ref.child("Kullanici").child(auth.getCurrentUser().getUid()).child("userPuan");
 
@@ -61,14 +72,17 @@ public class SinavSonuc extends AppCompatActivity {
                 int suankiPuan=Integer.parseInt(dataSnapshot.getValue(String.class));
                 int sonPuan=suankiPuan+Integer.parseInt(txtDogruSayisi.getText().toString())*10;
 
+                refPuan.setValue(Integer.toString(sonPuan));
+
             }
+
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
         });
-*/
+
 
 
 

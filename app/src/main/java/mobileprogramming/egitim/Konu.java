@@ -20,7 +20,6 @@ public class Konu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_konu);
 
-        Button signOut = (Button) findViewById(R.id.sign_out);
         Button btnCsharp =(Button) findViewById(R.id.btnCsharpDersi);
         Button btnHtml=(Button)findViewById(R.id.btnHtmlDersi);
         Button btnCss=(Button)findViewById(R.id.btnCssDersi);
@@ -60,15 +59,6 @@ public class Konu extends AppCompatActivity {
                 Intent k = new Intent(Konu.this, HtmlKonular.class);
                 k.putExtra("mesaj", dersAdi);
                 startActivity(k);
-            }
-        });
-        signOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                auth.signOut();
-                Intent k = new Intent(Konu.this, Login.class);
-                startActivity(k);
-
             }
         });
         btnProfil.setOnClickListener(new View.OnClickListener() {
