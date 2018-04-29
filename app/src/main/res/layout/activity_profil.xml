@@ -11,8 +11,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <Button
             android:id="@+id/button4"
@@ -33,14 +33,14 @@
             android:textColor="#ffffff" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/txtHakkinda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/textView14"
-            android:layout_marginTop="66dp"
-            android:textColor="#000000"
-            android:text="TextView" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="TextView"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/btnGeri"
@@ -56,34 +56,32 @@
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/btnGeri"
-            android:layout_alignEnd="@+id/textView19"
+            android:layout_alignBottom="@+id/sign_out"
+            android:layout_centerHorizontal="true"
             android:text="Hakkında"
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/txtUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/btnGeri"
             android:layout_marginTop="156dp"
             android:text="Kullanıcı Adı, Soyadı"
-            android:textColor="#000000"
-            />
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/textView15"
+            android:layout_alignTop="@+id/txtUsername"
             android:layout_marginEnd="79dp"
             android:text="Kullanıcı skoru"
-            android:textColor="#000000"
-            />
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/textView17"
@@ -94,50 +92,25 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="198dp"
             android:text="Bağlantılar"
-            android:textStyle="bold"
             android:textColor="@android:color/holo_red_dark"
-            />
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:id="@+id/txtiletisim"
+            android:layout_width="329dp"
+            android:layout_height="95dp"
             android:layout_alignStart="@+id/textView17"
-            android:layout_marginTop="232dp"
-            android:text="abdullahsaidkartal@gmail.com"
-            android:textColor="#000000"
-            />
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/textView17"
-            android:layout_marginBottom="221dp"
+            android:layout_centerVertical="true"
             android:text="twitter.com/abdullahskartal"
-            android:textColor="#000000"
-            />
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/textView17"
-            android:layout_marginBottom="174dp"
-            android:text="github.com/abdullahskartal"
-            android:textColor="#000000"
-            />
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView17"
             android:layout_marginBottom="50dp"
-            android:layout_toStartOf="@+id/textView12"
             android:text="Savaş Arvas" />
 
         <Button
@@ -155,7 +128,8 @@
             android:layout_width="wrap_content"
             android:layout_height="36dp"
             android:layout_alignEnd="@+id/button3"
-            android:layout_marginEnd="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
             android:background="#073763"
             android:drawableLeft="@mipmap/ic_launcher_out2"
             android:onClick="btnSignOut"

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="51dp">
+        tools:layout_editor_absoluteY="0dp">
 
         <Button
             android:id="@+id/btnCsharpDersi"
@@ -21,7 +21,7 @@
             android:layout_alignParentBottom="true"
 
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="77dp"
+            android:layout_marginBottom="97dp"
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_csharp"
             android:text="C#"
@@ -34,9 +34,7 @@
             android:layout_width="297dp"
             android:layout_height="wrap_content"
 
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="242dp"
+            android:layout_centerInParent="true"
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_css"
             android:text="CSS"
@@ -49,7 +47,7 @@
 
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="194dp"
+            android:layout_marginTop="170dp"
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_html"
             android:text="Html"
@@ -62,7 +60,7 @@
 
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="164dp"
+            android:layout_marginBottom="181dp"
             android:background="@android:color/holo_red_dark"
             android:drawableLeft="@mipmap/ic_launcher_c"
             android:text="C"
@@ -74,23 +72,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/btnGeri"
-            android:layout_marginEnd="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginTop="24dp"
             android:background="#073763"
             android:onClick="btnSignOut"
             android:text="SIGN OUT"
             android:textColor="#ffffff" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="284dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/btnCsharpDersi"
-            android:layout_marginTop="97dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
             android:text="Hangi programlama diliyle alıştırma yapmak istersiniz?"
             android:textColor="#fff"
-            android:textStyle="bold"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnProfil"
+            android:layout_width="111dp"
+            android:layout_height="58dp"
+            android:layout_alignEnd="@+id/sign_out"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23dp"
+            android:background="#073763"
+            android:drawableLeft="@mipmap/ic_launcher_profil"
+            android:text="Profil"
+            android:textColor="#fff" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

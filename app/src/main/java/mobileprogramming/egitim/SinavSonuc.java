@@ -8,6 +8,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
 
 public class SinavSonuc extends AppCompatActivity {
 
@@ -40,6 +47,33 @@ public class SinavSonuc extends AppCompatActivity {
                 startActivity(k);
             }
         });
+
+
+        /*
+        DatabaseReference ref= FirebaseDatabase.getInstance().getReference();
+        final DatabaseReference refPuan=ref.child("Kullanici").child(auth.getCurrentUser().getUid()).child("userPuan");
+
+
+        refPuan.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                int suankiPuan=Integer.parseInt(dataSnapshot.getValue(String.class));
+                int sonPuan=suankiPuan+Integer.parseInt(txtDogruSayisi.getText().toString())*10;
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+*/
+
+
+
+
+
 
     }
 }

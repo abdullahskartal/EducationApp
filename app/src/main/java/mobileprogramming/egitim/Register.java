@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,12 +21,17 @@ public class Register extends AppCompatActivity {
     private EditText register_email,register_sifre;
     private FirebaseAuth auth;
     private DatabaseReference mDatabase;
-    private
-    EditText email, sifre;
+    private EditText email, sifre;
+    private EditText userisim,useriletisim,userhakkinda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        useriletisim=(EditText) findViewById(R.id.register_iletisim);
+        userhakkinda=(EditText) findViewById(R.id.register_hakkinda);
+        userisim=(EditText) findViewById(R.id.register_username);
+
 
         auth=FirebaseAuth.getInstance();
 
@@ -46,7 +52,9 @@ public class Register extends AppCompatActivity {
 
                             yenikisi.setUsermail(rEmail);
                             yenikisi.setUserpass(rPassword);
-
+                            yenikisi.setUsername(userisim.getText().toString());
+                            yenikisi.setUserhakkinda(userhakkinda.getText().toString());
+                            yenikisi.setUserIletisim(useriletisim.getText().toString());
                             // database de kullanici alanının referansı alınıyor. burada işlemin yapılacağı belirtiliyor.
                             mDatabase = FirebaseDatabase.getInstance().getReference("Kullanici");
 

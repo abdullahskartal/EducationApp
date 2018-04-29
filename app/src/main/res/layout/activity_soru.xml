@@ -45,7 +45,6 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/txtSoru"
             android:layout_marginTop="195dp"
-
             android:background="@android:color/holo_red_dark"
             android:textColor="#ffffff" />
 

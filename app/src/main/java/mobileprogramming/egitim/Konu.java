@@ -21,13 +21,10 @@ public class Konu extends AppCompatActivity {
         setContentView(R.layout.activity_konu);
 
         Button signOut = (Button) findViewById(R.id.sign_out);
-
-        Button btnC=(Button) findViewById(R.id.btnCdersi);
         Button btnCsharp =(Button) findViewById(R.id.btnCsharpDersi);
         Button btnHtml=(Button)findViewById(R.id.btnHtmlDersi);
         Button btnCss=(Button)findViewById(R.id.btnCssDersi);
-
-
+        Button btnProfil=(Button)findViewById(R.id.btnProfil);
 
         auth = FirebaseAuth.getInstance();
 
@@ -59,15 +56,12 @@ public class Konu extends AppCompatActivity {
         btnHtml.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String dersAdi="HTML";
-                Intent k=new Intent(Konu.this,HtmlKonular.class);
-                k.putExtra("mesaj",dersAdi);
+                String dersAdi = "HTML";
+                Intent k = new Intent(Konu.this, HtmlKonular.class);
+                k.putExtra("mesaj", dersAdi);
                 startActivity(k);
             }
         });
-
-
-
         signOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,15 +71,12 @@ public class Konu extends AppCompatActivity {
 
             }
         });
-
-
-
-
+        btnProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent k=new Intent(Konu.this,Profil.class);
+                startActivity(k);
+            }
+        });
     }
-
-
-
-
-
-
 }
